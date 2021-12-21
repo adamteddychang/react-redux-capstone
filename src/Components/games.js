@@ -6,6 +6,8 @@ import Game from './game';
 
 const Games = () => {
   const games = useSelector((state) => state.games);
+  
+  
   const [searchResult, setSearchResult] = useState(null);
   const dispatch = useDispatch();
 
