@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Details = () => (
+const Details = () => {
+    return(
   <div>
     <p>Some Details</p>
   </div>
-);
+  )
+    };
 
 export default Details;

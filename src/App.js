@@ -3,8 +3,8 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Components/header';
 import Games from './Components/games';
 import Details from './Components/details'
-
 import './App.css';
+import About from './Components/about';
 
 function App() {
   return (
@@ -14,9 +14,12 @@ function App() {
       <Switch>
       <Route path="/" >
             <Games />
+          </Route>          
+          <Route path="/details">
+            <Details />
           </Route>
-          <Route>
-            <Details path="/details" />
+          <Route path="/about">
+            <About />
           </Route>
       </Switch>
     </Router>

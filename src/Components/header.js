@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillHome } from 'react-icons/ai';
 import {BsInfoCircleFill } from 'react-icons/bs';
+import './header.css'
 
 function Header() {
   return (
