@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
-  console.log(details)
+  
     return(
   <section className="whole-details">
     <Images/>
