@@ -1,16 +1,17 @@
 const ADD_GAME_DETAILS = 'ADD_GAME_DETAILS'
 
-const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
+const url = 'https://free-to-play-games-database.p.rapidapi.com/api/game';
 const initialState = {};
-let payload;
-let id ;
 
-const addGameDetails = (payload) = ({
+
+const addGameDetails = (payload) => ({
   type: ADD_GAME_DETAILS,
   payload,
 });
 
-const getGameDetails = (id) = (dispatch) => {
+const getGameDetails = (id) => (dispatch) => {
+
+
   fetch(`${url}?id=${id}`, {
     "method": "GET",
     "headers": {
@@ -25,7 +26,7 @@ const getGameDetails = (id) = (dispatch) => {
 
 const detailsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_GAME_DETAILS:     
+    case ADD_GAME_DETAILS:  
     return action.payload;
     default: return state;
   }

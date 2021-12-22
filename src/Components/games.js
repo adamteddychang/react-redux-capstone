@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getGameList } from '../redux/gamesAPI';
+import { getGameDetails } from '../redux/gameDetails';
 import Game from './game';
 
 const Games = () => {
@@ -12,7 +13,8 @@ const Games = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (games.length === 0) dispatch(getGameList());
+    if (games.length === 0) 
+    dispatch(getGameList());
   }, [dispatch,games.length]);
 
   const handleSearch = (event) => {
@@ -30,7 +32,7 @@ const Games = () => {
   };
 
   const onGameClick = (id) => {
-    console.log(id);
+    dispatch(getGameDetails(id));
   };
 
   return(
@@ -39,7 +41,7 @@ const Games = () => {
   <div className="intro">
     <div className="introSearch">
       <h1>Free Games Database</h1>
-      <p>All the information one click away</p>
+      <p>Everything free game you need, is one search away</p>
       <p>You can search by Title,Realease Date,Genre,Developer</p>
       <form>
       <input type="text" className="searchBar" placeholder="Search A Game" onChange={handleSearch} />
@@ -55,7 +57,7 @@ const Games = () => {
               </NavLink>
             ))
             : searchResult.map((game) => (
-              <NavLink key={game.id} to="/details">
+              <NavLink key={game.id} to="/details" onClick={() => onGameClick(game.id)}>
                 <Game game={game} />
               </NavLink>
             ))
