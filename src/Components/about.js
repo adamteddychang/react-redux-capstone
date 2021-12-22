@@ -3,9 +3,7 @@ import React from 'react';
 const About = () => {
   return(
   <div>
-    <h3>This is an About page
-
-    </h3>
+    <h3>This index is constructed by,<br></br> a developer who loves games</h3>
   </div>
   )
 };

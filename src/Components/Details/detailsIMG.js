@@ -3,12 +3,13 @@ import { useSelector } from 'react-redux';
 
 
 const Images = () => {
-  const details = useSelector((state) => state.details);
-  const imgIndex = Math.floor(Math.random() * 3);
-  
+  const detailsIMG = useSelector((state) => state.details);
+  const imgNum = detailsIMG.screenshots.length
+  const imgIndex = Math.floor(Math.random() * imgNum);
+  console.log(detailsIMG.screenshots[imgIndex])
   return(
     <div className="Images">
-  <img className="details-img" src={details.screenshots[imgIndex].image} alt="img" width={300}/>
+  <img className="details-img" src={detailsIMG.screenshots[imgIndex].image} alt="img" width={300}/>
       </div>
   )
 }

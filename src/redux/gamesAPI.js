@@ -24,8 +24,7 @@ const getGameList = () =>(dispatch) => {
 
 const gamesReducer = (state = initialState, action) => {
   switch(action.type) {
-    case ADD_GAMES_LIST_TO_STORE:
-      
+    case ADD_GAMES_LIST_TO_STORE:      
       return action.payload.reverse();
       default: return state;
   }

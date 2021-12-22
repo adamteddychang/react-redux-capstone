@@ -7,12 +7,13 @@ import './header.css'
 function Header() {
   return (
     <header>
-      <NavLink to="/">
-        <AiFillHome />
+      <NavLink to="/" exact>
+        <AiFillHome color="#fff" fontSize="2rem" />
       </NavLink>
+      <h3>The games</h3>
       <div>        
         <NavLink to="/about">
-          <BsInfoCircleFill />
+          <BsInfoCircleFill color="#fff" fontSize="2rem"/>
         </NavLink>
       </div>
     </header>

@@ -1,0 +1,15 @@
+
+
+.intro {
+  margin: 2rem 3rem;
+}
+
+.searchBar {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+}
+
+.searchBar::placeholder {
+  color: #fff;
+}

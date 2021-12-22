@@ -1,5 +1,18 @@
+
+html {
+  background-color:#0070d1;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  padding: 1rem 1rem; 
+  font-size: 2rem;
+  align-items: center;
+  background-color: #0e110f;
+  color: #fff;
+}
+
+header h3 {
+ margin: 0;
 }

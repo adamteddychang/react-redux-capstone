@@ -26,7 +26,7 @@ const getGameDetails = (id) => (dispatch) => {
 
 const detailsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_GAME_DETAILS:  
+    case ADD_GAME_DETAILS: 
     return action.payload;
     default: return state;
   }

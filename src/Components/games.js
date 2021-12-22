@@ -6,6 +6,7 @@ import { getGameDetails } from '../redux/gameDetails';
 import Game from './game';
 
 const Games = () => {
+
   const games = useSelector((state) => state.games);
   
   
@@ -37,17 +38,17 @@ const Games = () => {
 
   return(
   
-  <div className="games-container">
-  <div className="intro">
-    <div className="introSearch">
-      <h1>Free Games Database</h1>
+  <div className="main-container">
+  
+    <div className="intro">
+      <h1>The Free Games Database</h1>
       <p>Everything free game you need, is one search away</p>
-      <p>You can search by Title,Realease Date,Genre,Developer</p>
+      <p>You can search by Title, Genre, Developer</p>
       <form>
-      <input type="text" className="searchBar" placeholder="Search A Game" onChange={handleSearch} />
+      <input type="text" className="searchBar" placeholder="Find your favorite" onChange={handleSearch} />
         </form>
     </div>
-  </div>
+  
   <div className="gamesContainer">
         {
           (searchResult === null)
