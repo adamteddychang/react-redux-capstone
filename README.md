@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travelers Hub
+# Stocks App
 
-> This project is for space rockets and missions. You can see available rockets and missions to reserve or join. The project built by using JavaScript, React, Redux, CSS.
+> This project utilizes Financial modeling prep API to dispolay stocks, foreign exchange, cryptos...and so on. I used React-Redux along with jest testing to complete this project. 
 
 
 
 
 ## Live Demo
 
-[Live Coming soon]()
+[Live Link](https://adamstocksapp.netlify.app/)
 
 ## Built With
 
@@ -17,7 +17,7 @@
 - React, Redux
 - NPM
 - React and Redux Web Dev Tools
-- Pair-programming
+- Financial modeling prep API
 
 ## Getting Started
 
@@ -26,13 +26,13 @@ To get a local copy up and running follow these simple example steps.
 Clone the project by using terminal:
 
 ```
-git clone https://github.com/adamteddychang/.git
+git clone https://github.com/adamteddychang/stocks-app.git
 ```
 
 cd into the directory:
 
 ```
-cd space-travelers
+cd stocks-app
 ```
 
 install node modules:
@@ -82,7 +82,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This project built in Microverse's second module's last week.
--
+- Original design idea by Nelson Sakwa on Behance.
 
 ## 📝 License
 
