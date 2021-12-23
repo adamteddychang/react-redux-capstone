@@ -9,9 +9,9 @@ function Game(props) {
       <img className="image" src={game.thumbnail} alt="a game thumbnail" />
       <div className="details">
         <h2 className="title">{game.title}</h2>
-        <p className="genre">{game.genre}</p>
+        <p className="genre">Genre: {game.genre}</p>
         <p className="releaseDate">{game.release_Date}</p>
-        <p className="developer">{game.developer}</p>
+        <p className="developer">Developer: {game.developer}</p>
       </div>
     </div>
   );

@@ -1,0 +1,39 @@
+.whole-details {
+  display: grid;
+justify-items:center;
+ padding-top: 4rem;
+}
+
+
+.Image {
+  width: 20rem;
+  text-align: center;
+}
+
+.details-img {
+  width: 20rem;
+}
+
+.txt-details {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
+.txt-details h1 {
+  margin-top: 0;
+}
+
+.txt-details div{
+margin-top: 1rem;
+}
+
+.game-link button {
+  border: 1px solid black 0.3;
+  border-radius: 25px;
+  padding: 0.5em;
+  font-size: 24px;
+  font-style: italic;
+  background-color: rgb(255, 255, 255) ;
+}

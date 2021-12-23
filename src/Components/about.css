@@ -1,0 +1,23 @@
+
+.about-page {
+  margin: 1rem;
+}
+
+.about-page h3 {
+  margin: 0;
+}
+
+.about {
+  font-size: 24px;
+}
+
+
+.github_link svg {
+  width: 3rem;
+  height: auto;
+  margin: 2rem;
+}
+
+.Italic {
+  font-style: italic;
+}
