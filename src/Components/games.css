@@ -3,6 +3,10 @@ a {
   color: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 .intro {
   margin: 2rem 3rem;
 }
@@ -38,19 +42,20 @@ a {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
- 
 }
 
 .gameContainer {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  width: 20rem;  
+  width: 20rem;
   height: 19rem;
-  margin:0.5rem;  
-  
-  
-  
+  margin: 0.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
 }
 
 .gameContainer .details {
@@ -65,26 +70,15 @@ a {
   margin-bottom: 0;
 }
 
-.details {
-  display: flex;
-  flex-direction: column;
-  
-}
-
 .title {
   background-color: #fff;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   margin: 0;
   padding-left: 0;
 }
 
 .details p {
   margin-left: 0.5rem;
-  
-}
-
-p {
-  margin: 0;
 }
 
 .genre {

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { getGameList } from '../redux/gamesAPI';
@@ -6,17 +6,14 @@ import { getGameDetails } from '../redux/gameDetails';
 import Game from './game';
 
 const Games = () => {
-
   const games = useSelector((state) => state.games);
-  
-  
+
   const [searchResult, setSearchResult] = useState(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (games.length === 0) 
-    dispatch(getGameList());
-  }, [dispatch,games.length]);
+    if (games.length === 0) { dispatch(getGameList()); }
+  }, [dispatch, games.length]);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -36,20 +33,20 @@ const Games = () => {
     dispatch(getGameDetails(id));
   };
 
-  return(
-  
-  <div className="main-container">
-  
-    <div className="intro">
-      <h1>The Free Games Database</h1>
-      <p>Everything free game you need, is one search away</p>
-      <p>You can search by Title, Genre, Developer</p>
-      <form>
-      <input type="text" className="searchBar" placeholder="Find your favorite" onChange={handleSearch} />
+  return (
+
+    <div className="main-container">
+
+      <div className="intro">
+        <h1>The Free Games Database</h1>
+        <p>Everything free game you need, is one search away</p>
+        <p>You can search by Title, Genre, Developer</p>
+        <form>
+          <input type="text" className="searchBar" placeholder="Find your favorite" onChange={handleSearch} />
         </form>
-    </div>
-  
-  <div className="gamesContainer">
+      </div>
+
+      <div className="gamesContainer">
         {
           (searchResult === null)
             ? games.map((game) => (
@@ -65,13 +62,9 @@ const Games = () => {
         }
       </div>
 
+    </div>
 
-  
-</div>
-
-
-)
+  );
 };
-
 
 export default Games;

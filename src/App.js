@@ -2,27 +2,27 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Components/header';
 import Games from './Components/games';
-import Details from './Components/details'
+import Details from './Components/details';
 import './App.css';
 import About from './Components/about';
 
 function App() {
   return (
-    <div>    
-    <Router>
-      <Header/>
-      <Switch>
-      <Route path="/" exact>
+    <div>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
             <Games />
-          </Route>          
-        <Route path="/details" exact>
+          </Route>
+          <Route path="/details" exact>
             <Details />
           </Route>
           <Route path="/about">
             <About />
           </Route>
-      </Switch>
-    </Router>
+        </Switch>
+      </Router>
     </div>
   );
 }
