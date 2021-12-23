@@ -9,7 +9,6 @@ import './header.css'
 
 function Header() {
   const dispatch = useDispatch();
-
   const homeClick = () => {
     dispatch(cleanDetails());
   };

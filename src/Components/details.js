@@ -1,13 +1,15 @@
 import React from 'react';
-import Images from './detailsIMG'
 import { useSelector } from 'react-redux';
 
 const Details = () => {
   const details = useSelector((state) => state.details);
-  
+  console.log(details.screenshots)
+ 
     return(
   <section className="whole-details">
-    <Images/>
+    <div className="Images">
+  <img className="details-img" src={details.thumbnail} alt="img" width={300}/>
+      </div>
     <div className="text-details">
       <h1>{details.title}</h1>
       <div className="genre">

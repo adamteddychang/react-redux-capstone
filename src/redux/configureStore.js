@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import gamesReducer from './gamesAPI';
@@ -9,6 +9,6 @@ const reducer = combineReducers({
   details: detailsReducer,
 });
 
-const store = createStore(reducer, applyMiddleware(thunk, logger));
+const store = createStore(reducer, compose(applyMiddleware(thunk, logger)));
 
 export default store;

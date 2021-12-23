@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Components/header';
 import Games from './Components/games';
-import Details from './Components/Details/details'
+import Details from './Components/details'
 import './App.css';
 import About from './Components/about';
 
@@ -15,7 +15,7 @@ function App() {
       <Route path="/" exact>
             <Games />
           </Route>          
-        <Route path="/details">
+        <Route path="/details" exact>
             <Details />
           </Route>
           <Route path="/about">

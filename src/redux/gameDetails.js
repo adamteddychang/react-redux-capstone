@@ -2,7 +2,7 @@ const ADD_GAME_DETAILS = 'ADD_GAME_DETAILS'
 const CLEAN_DETAILS = 'CLEAN_DETAILS'
 
 const url = 'https://free-to-play-games-database.p.rapidapi.com/api/game';
-const initialState ={};
+const initialState = {};
 
 
 const addGameDetails = (payload) => ({
@@ -15,8 +15,6 @@ const cleanDetails = () => ({
 });
 
 const getGameDetails = (id) => (dispatch) => {
-
-
   fetch(`${url}?id=${id}`, {
     "method": "GET",
     "headers": {
