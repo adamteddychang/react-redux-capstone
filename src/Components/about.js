@@ -15,9 +15,9 @@ const About = () => (
     <div className="about">
       <h1>Hi, I am Adam.</h1>
       <div className="Links">
-        <a className="github_link" target="_blank" href="https://github.com/adamteddychang" rel="noreferrer"><BsGithub /></a>
-        <a className="github_link" target="_blank" href="https://www.linkedin.com/in/adamteddychang/" rel="noreferrer"><BsLinkedin /></a>
-        <a className="github_link" target="_blank" href="https://twitter.com/AdamChang3" rel="noreferrer"><BsTwitter /></a>
+        <a className="github_link" target="_blank" href="https://github.com/adamteddychang" rel="noreferrer"><BsGithub aria-label="Github" /></a>
+        <a className="github_link" target="_blank" href="https://www.linkedin.com/in/adamteddychang/" rel="noreferrer"><BsLinkedin aria-label="Linkedin" /></a>
+        <a className="github_link" target="_blank" href="https://twitter.com/AdamChang3" rel="noreferrer"><BsTwitter aria-label="Twitter" /></a>
       </div>
       <p>Up there, those are my socials. Check them out!</p>
       <p className="Italic">

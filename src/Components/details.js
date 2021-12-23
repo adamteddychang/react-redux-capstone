@@ -51,7 +51,7 @@ const Details = () => {
         <div className="game-link">
           <span>
             <a target="_blank" href={details.game_url} rel="noreferrer">
-              <button>
+              <button type="button">
                 Game Link
 
               </button>
